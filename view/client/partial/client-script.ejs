@@ -1,0 +1,95 @@
+<script src="../../../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="../../../assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="../../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="../../../assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!--  Chartist Plugin  -->
+<script src="../../../assets/js/plugins/chartist.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../../../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
+<script src="../../../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
+<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+<script src="../../../assets/js/demo.js"></script>
+<!--<script type="text/javascript">-->
+<!--    $(document).ready(function() {-->
+<!--        // Javascript method's body can be found in ../../assets/js/demos.js-->
+<!--        demo.initDashboardPageCharts();-->
+
+<!--        demo.showNotification();-->
+
+<!--    });-->
+<!--</script>-->
+<script src="../../../js/jquery.validate.min.js"></script>
+<script src="../../../js/js-for-contact.js"></script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+<!--Khung hiện ẩn cho client-left-menu-products.ejs gồm Category và myTrademark của Bách-->
+<script>
+    function myCategory() {
+        var x = document.getElementById("myCategory");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+    function myTrademark() {
+        var x = document.getElementById("myTrademark");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+<!--Sắp xếp của bách-->
+<script>
+    $("#id-name-sort").click(function () {
+        var sort_item = $("#id-name-sort").val();
+        if (sort_item === "asc"){
+            window.location.href="/client/products/sort-a-z";
+        }
+        else if (sort_item === "desc"){
+            window.location.href="/client/products/sort-z-a";
+        }
+        else if (sort_item === "number-asc"){
+            window.location.href="/client/products/sort-number-asc";
+        }
+        else if (sort_item === "number-desc"){
+            window.location.href="/client/products/sort-number-desc";
+        }
+    })
+</script>
+
+<!--tìm kiếm của bách-->
+<script>
+    // Write on keyup event of keyword input element
+    $(document).ready(function(){
+        $("#search").keyup(function(){
+            _this = this;
+            // Show only matching TR, hide rest of them
+            $.each($(".col-lg-3"), function() {
+                if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1){ // tìm đến tất cả chuỗi trong mỗi SELECTER mà có giá trị -1 tức là không tồn tại
+                    $(this).hide();
+                }
+                else {
+                    $(this).show();
+                }
+            });
+        });
+    });
+</script>
+</html>
