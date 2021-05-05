@@ -1,0 +1,142 @@
+.container-fluid{
+    padding: 0 60px;
+}
+.header{
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 60px 10px;
+}
+.header div a{
+    text-decoration: none;
+    color: black;
+}
+.header div a:hover{
+    color: #ff5050;
+}
+.header-title{
+    background-color:#ff5050;
+    padding: 12px 15px;
+    color: white;
+}
+.margin{
+    margin: 50px 0;
+}
+.line{
+    margin-top: 2px;
+    margin-bottom: 20px;
+    border-bottom:#ff5050 solid 3px ;
+}
+.list-product{
+    padding-left: 20px;
+    color: #f4f4f4;
+}
+.list-product li{
+    padding: 15px 0;
+    border-bottom:1px dashed #f4f4f4;
+}
+.list-product li  span{
+    color: black;
+}
+.list-product li  span:hover{
+    color: #ff5050 ;
+    cursor: pointer;
+}
+.thumbnail div img {
+    width: 100%;
+}
+.title-detail{
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.prices{
+    color:#ff5050 ;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.star{
+    margin-bottom: 10px;
+}
+#carouselExampleControls{
+    width: 100%;
+}
+#carouselExampleControls div img {
+    width: 153px;
+    height: 130px;
+}
+.input-values{
+    width: 50px;
+    text-align: center;
+}
+.description{
+    margin: 20px 0;
+}
+.button{
+    cursor: pointer;
+    padding: 2px;
+    border: #f4f4f4 solid 2px;
+}
+.header-2{
+    width: 204px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#money{
+    font-size: 25px;
+    color:#ff5050;
+    font-weight: bold;
+}
+.many-stock{
+    color: #fcb755;
+}
+.payment-btn{
+    margin-top: 20px;
+}
+.btn{
+    margin-right: 10px;
+}
+.icon{
+    margin-top: 20px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.fa-facebook-square{
+    color: #3b5998;
+}
+.fa-twitter-square{
+    color: #1b9bff;
+}
+.fa-envelope-square{
+    color: gray;
+}
+.fa-print{
+    color: gray;
+}
+.slide-slow{
+    list-style-type: none;
+    margin-bottom: 0;
+}
+.slide-slow li  img{
+    width: 153px;
+    height: 150px;
+    float: right;
+    text-align: center;
+}
+.detail-description li {
+    list-style-type: none;
+}
+#information{
+    margin-top: 20px;
+}
+.reviews{
+    text-decoration:none;
+    color: black;
+}
+.reviews:hover{
+    color: black;
+    float: left;
+}
+#submit{
+    margin-top: 10px;
+}
