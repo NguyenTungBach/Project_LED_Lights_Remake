@@ -28,7 +28,7 @@
 
 #search {
     height: 50px;
-    width: 13em;
+    width: 16em;
     padding: 0 70px 0 20px;
 }
 
@@ -59,3 +59,23 @@
 }
 
 /* Thanh Search của Auro END*/
+
+/* fix cứng chiều cao khung ảnh START*/
+.img-h-287{
+    height: 287px;
+}
+
+/* fix cứng chiều cao khung ảnh END*/
+
+/* 3 chấm  START*/
+.ba_cham{
+    width: 100%;
+    height: 42px;
+    text-overflow: ellipsis; /* hiển thị dấu 3 chấm cuối dòng */
+    overflow: hidden;
+    display: -moz-box; /* hỗ trợ hiển thị cho Firefox */
+    display: -webkit-box; /* vì hiển thị dấu 3 chấm không được hỗ trợ trong Chrome và Safari nên cần thuộc tính này */
+    -webkit-box-orient: vertical; /* hiển thị theo chiều dọc, đoạn này cần có nếu không sẽ không hiển thị đc đấu 3 chấm */
+    -webkit-line-clamp: 2; /* số dòng muốn hiển thị là 3 */
+}
+/* 3 chấm  END*/
