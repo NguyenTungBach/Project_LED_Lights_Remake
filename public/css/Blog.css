@@ -50,23 +50,24 @@
     margin-bottom: 2px;
     margin-top: 50px;
 }
-ul{
-    margin-top: 20px;
-    text-align: left;
-    padding-left: 20px;
-}
-ul li {
-    padding: 20px;
-    border-bottom: dashed #e4e4e4 1px;
-    color: #e4e4e4;
-}
-ul li a{
-    color: black;
-}
-ul li a:hover{
-    color:#ff5050;
-    transition: all ease 0.5s;
-}
+/*ul{*/
+/*    margin-top: 20px;*/
+/*    text-align: left;*/
+/*    padding-left: 20px;*/
+/*}*/
+/*ul li {*/
+/*    padding: 20px;*/
+/*    border-bottom: dashed #e4e4e4 1px;*/
+/*    color: #e4e4e4;*/
+/*}*/
+
+/*ul li a{*/
+/*    color: black;*/
+/*}*/
+/*ul li a:hover{*/
+/*    color:#ff5050;*/
+/*    transition: all ease 0.5s;*/
+/*}*/
 .right-detail{
     margin-left: 25px;
 }
