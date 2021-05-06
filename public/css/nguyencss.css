@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
 }
 
 body{
@@ -743,8 +742,6 @@ div#sticky {
 .featured label{
     margin-right: 5px;
     margin-top: 2px;
-    font-weight: 900;
-
 }
 
 .h-30{
@@ -878,7 +875,7 @@ div#sticky {
 }
 
 .product-infor p{
-    font-weight: bolder;
+    font-weight: 600;
     font-size: 20px;
     margin-bottom: 10px;
 }
