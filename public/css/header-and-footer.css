@@ -1,0 +1,408 @@
+
+
+/*===== HEADER =====*/
+.bd-grid {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.header-client li {
+    display: inline-table;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 13px;
+}
+.header-client li a{
+    text-decoration: unset;
+    color: #000;
+}
+
+.top-header {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.icon-buy a {
+    color: black;
+    text-decoration: unset;
+}
+
+.icon-buy {
+    text-align: right;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+
+/*Logo and shipping*/
+.delivery {
+    text-align: right;
+
+}
+
+.delivery p {
+    line-height: 50px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 680px) {
+    .delivery {
+        display: none;
+    }
+
+    .icon-buy {
+        display: none;
+    }
+
+    .logo {
+        text-align: center;
+    }
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 3rem 1rem;
+    background-color: #FFF;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.header__logo {
+    color: #0E1026FF;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+
+
+.header__toggle {
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+.header > .fa{
+    display: none;
+}
+
+/*===== NAV =====*/
+@media screen and (max-width: 968px) {
+    .nav--menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: rgb(230 230 230);
+        width: 80%;
+        height: 100vh;
+        padding: 2rem 0;
+        z-index: 100;
+        transition: .5s;
+        overflow-y: auto;
+    }
+    .header{
+        padding: 2rem 1rem;
+    }
+
+    .header > .fa{
+        display: inline-block;
+    }
+}
+
+
+.nav__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__content a{
+    text-decoration: none;
+}
+
+.nav__perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+.nav__img {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.nav__img img {
+    width: 70px;
+}
+
+.nav__name {
+    display: block;
+    font-size: 1.5rem;
+    color: #000000;
+    text-decoration: none;
+}
+.nav__name:hover{
+    color: #fc5327;
+}
+
+.nav__item {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.nav__item a:hover{
+    color: #fc5327;
+}
+
+.nav__link {
+    color: #000000;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: #5B65F5;
+}
+
+/*Show menu*/
+.show {
+    left: 0;
+}
+
+
+/*=== Dropdown ===*/
+.dropdown__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown__icon {
+    font-size: 1rem;
+    transition: .5s;
+    margin-left: 0.12rem;
+}
+
+.dropdown__menu {
+    margin: 1rem 0 0 1rem;
+    display: none;
+}
+
+.dropdown__item {
+    margin: 1rem 0;
+}
+
+.dropdown:hover > .dropdown__menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown__icon {
+    transform: rotate(180deg);
+}
+
+/* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 576px) {
+    .nav--menu {
+        width: 288px;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    body {
+        margin: 0;
+    }
+    .header {
+        height: calc(5rem);
+    }
+    .header__logo {
+        display: none;
+    }
+
+    .nav--menu {
+        width: 100%;
+    }
+    .nav__content a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .nav__content a:hover{
+        color: #fc5327;
+    }
+
+    .nav__content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav__perfil {
+        flex-direction: row;
+        text-align: initial;
+        margin-bottom: 0;
+    }
+    .nav__img {
+        width: 40px;
+        height: 40px;
+        margin-right: .5rem;
+        margin-bottom: 0;
+    }
+    .nav__img img {
+        width: 46px;
+    }
+    .nav__name {
+        color: #0E1026;
+
+    }
+    .nav__list {
+        display: flex;
+        align-items: center;
+    }
+    .nav__item {
+        margin: 0 1.5rem;
+        padding: 1.4rem 0;
+    }
+    .nav__link {
+        color: #0E1026FF;
+    }
+    .nav__link:hover {
+        color: #5B65F5;
+    }
+    /*Active link new color*/
+
+    .dropdown {
+        position: relative;
+    }
+    .dropdown__menu {
+        background-color: rgba(255, 255, 255, 0.9); ;
+        position: fixed;
+        margin: 0;
+        padding: .5rem 1.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        border-radius: .5rem;
+        min-width: 150px;
+    }
+    .dropdown__item {
+        margin: .5rem 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+/*HEARDER END*/
+
+
+
+/*Footer*/
+
+
+ul {
+    list-style: none;
+    padding: unset;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: #FFF;
+    padding: 50px 0;
+    border-top: 1px solid #c2c2c2;
+
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #000;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #fb774b;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    color: #909090;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #000;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #FFF;
+    background-color: #fb774b;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+

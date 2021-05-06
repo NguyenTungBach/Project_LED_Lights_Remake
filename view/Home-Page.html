@@ -13,6 +13,7 @@
           rel="stylesheet">
     <link rel="stylesheet" href="../public/css/bootstrap.min.css">
     <link rel="stylesheet" href="../public/css/home-Page.css">
+    <link rel="stylesheet" href="../public/css/header-and-footer.css">
 
 </head>
 <body>
@@ -35,12 +36,14 @@
 
 <header class="header">
     <a href="#" class="header__logo text-decoration-none">Led4life</a>
+
     <i class='fa fa-bars header__toggle' id="header-toggle"></i>
+
     <nav class="nav--menu" id="nav-menu">
         <div class="nav__content  bd-grid">
             <a href="" class="nav__perfil ">
                 <div class="nav__img">
-                    <img src="../public/img/home/logo.png"/>
+                    <img src="../public/img/home/logo.png" height="2000" width="2000"/>
                 </div>
                 <div>
                     <span class="nav__name ">led4life</span>
@@ -49,28 +52,35 @@
             <div class="nav__menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+
                     <li class="nav__item dropdown">
                         <a href="#" class="nav__link dropdown__link">Category<i
                                 class='fa fa-chevron-down dropdown__icon'></i></a>
                         <ul class="dropdown__menu">
-                            <li class="dropdown__item"><a href="#" class="nav__link">Link</a></li>
-                            <li class="dropdown__item"><a href="#" class="nav__link">Link</a></li>
-                            <li class="dropdown__item"><a href="#" class="nav__link">Link</a></li>
+                            <li><a href="../view/products.html">Bulbs</a></li>
+                            <li><a href="../view/products.html">Spot Lights</a></li>
+                            <li><a href="../view/products.html">Decoration Lights</a></li>
+                            <li><a href="../view/products.html">Smart Lights</a></li>
+
                         </ul>
                     </li>
-                    <li class="nav__item"><a href="saleOff.html" class="nav__link">SaleOff</a></li>
+
+                    <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
 
                     <li class="nav__item dropdown">
-                        <a href="#" class="nav__link dropdown__link">Works
+                        <a href="#" class="nav__link dropdown__link">Trademark
                             <i class='fa fa-chevron-down dropdown__icon'></i>
                         </a>
                         <ul class="dropdown__menu">
-                            <li class="dropdown__item"><a href="#" class="nav__link">Recent jobs</a></li>
-                            <li class="dropdown__item"><a href="#" class="nav__link">Better jobs</a></li>
-                            <li class="dropdown__item"><a href="#" class="nav__link">Work Awards</a></li>
+                            <li><a href="../view/products.html">Coca</a></li>
+                            <li><a href="../view/products.html">Pesi</a></li>
+                            <li><a href="../view/products.html">DC</a></li>
+                            <li><a href="../view/products.html">Mavel</a></li>
                         </ul>
                     </li>
                     <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
                 </ul>
             </div>
         </div>
@@ -490,7 +500,7 @@
     </div>
 </div>
 
-
+<!--Footer-->
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -534,6 +544,8 @@
         </div>
     </div>
 </footer>
+<!--EndFooter-->
+
 
 <script src="https://kit.fontawesome.com/c704dbde0e.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -542,33 +554,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-
 <!--Js Menu Header-->
-<!--<script>-->
-<!--    const showMenu = (toggleId, navId)=>{-->
-<!--        const toggle = document.getElementById(toggleId),-->
-<!--            nav = document.getElementById(navId)-->
-
-<!--        if(toggle && nav){-->
-<!--            toggle.addEventListener('click', ()=>{-->
-<!--                nav.classList.toggle('show')-->
-<!--                toggle.classList.toggle('bx-x')-->
-<!--            })-->
-<!--        }-->
-<!--    }-->
-<!--    showMenu('header-toggle','nav-menu')-->
-
-<!--    /*===== ACTIVE AND REMOVE MENU =====*/-->
-<!--    const navLink = document.querySelectorAll('.nav__link');-->
-
-<!--    function linkAction(){-->
-<!--        /*Active link*/-->
-<!--        navLink.forEach(n => n.classList.remove('active'));-->
-<!--        this.classList.add('active');-->
-<!--    }-->
-<!--    navLink.forEach(n => n.addEventListener('click', linkAction));-->
-<!--</script>-->
 <script src="../public/js/home-js.js"></script>
-<!--<script src=""></script>-->
+
 </body>
 </html>

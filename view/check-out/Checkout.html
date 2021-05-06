@@ -7,64 +7,80 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Checkout</title>
     <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../Nguyen/css/home-Page.css">
     <link rel="stylesheet" href="../../public/css/checkout.css">
     <link rel="stylesheet" href="../../public/css/bachcss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../../public/css/header-and-footer.css">
 </head>
 <body>
-<!--Hearder start (Header chưa repronsive cứ dùng tạm đang sửa nốt)-->
-<header class="site-header">
-    <div class="container-fluid">
-        <div class="row ">
-            <div class="col-lg-2 ">
-                <div class="header-logo">
-                    <a href="">
-                        <img src="../../Nguyen/img/logo.png" height="2000" width="2000"/>
-                        <h2>led4life</h2>
-                    </a>
-                </div>
-            </div>
+<!--Hearder start -->
+<div class="container-fluid ">
+    <div class="row mb-2 top-header">
+        <div class="col-lg">
+            <ul class="header-client">
+                <li><p class="fas fa-phone-alt">0964 866 701</p></li>
+                <li><a class="fas fa-envelope" href="#"> hoangkien0601@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="col-lg icon-buy">
+            <a class="fas fa-shopping-cart" href="#"> Cart</a>
+        </div>
+    </div>
+    <!--Logo and shipping-->
+</div>
 
-            <div class="col-lg-8 m-auto">
-                <ul class="header-menu">
-                    <li class="header-menu-li"><a href="../../Nguyen/Home-Page.html">Home</a></li>
-                    <li class="header-menu-li"><a href="../products.html">Shop</a></li>
-                    <li class="header-menu-li dropdown-abourt">
-                        <a href="#">Category</a>
-                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                        <ul class="dropdown-list">
-                            <li><a href="../../view/products.html">Bulbs</a></li>
-                            <li><a href="../../view/products.html">Spot Lights</a></li>
-                            <li><a href="../../view/products.html">Decoration Lights</a></li>
-                            <li><a href="../../view/products.html">Smart Lights</a></li>
+<header class="header">
+    <a href="#" class="header__logo text-decoration-none">Led4life</a>
+
+    <i class='fa fa-bars header__toggle' id="header-toggle"></i>
+
+    <nav class="nav--menu" id="nav-menu">
+        <div class="nav__content  bd-grid">
+            <a href="" class="nav__perfil ">
+                <div class="nav__img">
+                    <img src="../../public/img/home/logo.png"/>
+                </div>
+                <div>
+                    <span class="nav__name ">led4life</span>
+                </div>
+            </a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+
+                    <li class="nav__item dropdown">
+                        <a href="#" class="nav__link dropdown__link">Category<i
+                                class='fa fa-chevron-down dropdown__icon'></i></a>
+                        <ul class="dropdown__menu">
+                            <li><a href="../view/products.html">Bulbs</a></li>
+                            <li><a href="../view/products.html">Spot Lights</a></li>
+                            <li><a href="../view/products.html">Decoration Lights</a></li>
+                            <li><a href="../view/products.html">Smart Lights</a></li>
+
                         </ul>
                     </li>
-                    <li class="header-menu-li dropdown-abourt">
-                        <a href="#">Trademark</a>
-                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                        <ul class="dropdown-list">
-                            <li><a href="../../view/products.html">Coca</a></li>
-                            <li><a href="../../view/products.html">Pesi</a></li>
-                            <li><a href="../../view/products.html">DC</a></li>
-                            <li><a href="../../view/products.html">Mavel</a></li>
+
+                    <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+
+                    <li class="nav__item dropdown">
+                        <a href="#" class="nav__link dropdown__link">Trademark
+                            <i class='fa fa-chevron-down dropdown__icon'></i>
+                        </a>
+                        <ul class="dropdown__menu">
+                            <li><a href="../view/products.html">Coca</a></li>
+                            <li><a href="../view/products.html">Pesi</a></li>
+                            <li><a href="../view/products.html">DC</a></li>
+                            <li><a href="../view/products.html">Mavel</a></li>
                         </ul>
                     </li>
-                    <li class="header-menu-li"><a href="../../view/contact-us.html">Contact</a></li>
-                    <li class="header-menu-li"><a href="../../view/blog/Blog.html">Blog</a></li>
-                    <li class="header-menu-li"><a href="">About</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 m-auto">
-                <ul class="header-icon">
-                    <li><i class="fa fa-search" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
 </header>
-<!--Hearder end-->
 
 <!--MAIN START-->
 <div>
