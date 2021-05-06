@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+.main-heading{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.thumbnail{
+    border-radius: 60%;
+    width: 95%;
+    height:300px;
+}
+.name{
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 5px;
+}
+.description{
+    font-size: 18px;
+    color: #999999;
+}
+
+@media screen  and (max-width: 1199px){
+    .thumbnail{
+        width: 50%;
+    }
+}
