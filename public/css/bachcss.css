@@ -1,6 +1,6 @@
 
 /*hover button*/
-.send-msg button:hover{
+ button:hover{
     cursor: pointer;
 }
 
