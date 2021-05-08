@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../public/css/bachcss.css">
     <link rel="stylesheet" href="../../public/css/header-and-footer.css">
+    <link rel="stylesheet" href="../../public/css/products.css">
 </head>
 
 <body>
@@ -42,7 +43,7 @@
         <div class="nav__content  bd-grid">
             <a href="../Home-Page.html" class="nav__perfil ">
                 <div class="nav__img">
-                    <img src="../../public/img/home/logo.png" >
+                    <img src="../../public/img/home/logo.png">
                 </div>
                 <div>
                     <span class="nav__name ">led4life</span>
@@ -53,32 +54,32 @@
                     <li class="nav__item"><a href="../Home-Page.html" class="nav__link">Home</a></li>
 
                     <li class="nav__item dropdown">
-                        <a href="#" class="nav__link dropdown__link">Category<i
+                        <a href="../category.html" class="nav__link dropdown__link">Category<i
                                 class='fa fa-chevron-down dropdown__icon'></i></a>
                         <ul class="dropdown__menu">
-                            <li><a href="../products.html">Bulbs</a></li>
-                            <li><a href="../products.html">Spot Lights</a></li>
-                            <li><a href="../products.html">Decoration Lights</a></li>
-                            <li><a href="../products.html">Smart Lights</a></li>
+                            <li><a href="../category.html.html">Bulbs</a></li>
+                            <li><a href="../category.html">Spot Lights</a></li>
+                            <li><a href="../category.html">Decoration Lights</a></li>
+                            <li><a href="../category.html">Smart Lights</a></li>
 
                         </ul>
                     </li>
 
-                    <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
 
                     <li class="nav__item dropdown">
-                        <a href="#" class="nav__link dropdown__link">Trademark
+                        <a href="../trademark.html" class="nav__link dropdown__link">Trademark
                             <i class='fa fa-chevron-down dropdown__icon'></i>
                         </a>
                         <ul class="dropdown__menu">
-                            <li><a href="../products.html">Coca</a></li>
-                            <li><a href="../products.html">Pesi</a></li>
-                            <li><a href="../products.html">DC</a></li>
-                            <li><a href="../products.html">Mavel</a></li>
+                            <li><a href="../trademark.html">Coca</a></li>
+                            <li><a href="../trademark.html">Pesi</a></li>
+                            <li><a href="../trademark.html">DC</a></li>
+                            <li><a href="../trademark.html">Mavel</a></li>
                         </ul>
                     </li>
                     <li class="nav__item"><a href="../contact-us.html" class="nav__link">Contact</a></li>
-                    <li class="nav__item"><a href="../blog/Blog.html" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="Blog.html" class="nav__link">Blog</a></li>
                     <li class="nav__item"><a href="../about.html" class="nav__link">About</a></li>
                 </ul>
             </div>
@@ -88,17 +89,24 @@
 
 <!--Hearder end-->
 
-<!--MAIN START-->
-<section class="jumbotron text-center">
+<section class="jumbotron text-center bgr-color-prd">
     <div class="container">
-        <h1 class="jumbotron-heading">CART</h1>
+        <div class="col-lg-12">
+            <h1 class="jumbotron-heading ">Cart</h1>
+        </div>
+        <div class="row justify-content-center product-top-content">
+            <a href="../Home-Page.html" class="mr-1">Home</a>
+            &#62;
+            <p class="ml-1">Cart</p>
+        </div>
     </div>
 </section>
+
 <div class="container mb-4">
     <div class="row">
         <div class="col-12">
             <div class="table-responsive">
-                <table class="table table-striped">
+                <table class="table border">
                     <thead>
                     <tr>
                         <th scope="col">Product</th>
@@ -106,17 +114,22 @@
                         <th scope="col">Available</th>
                         <th scope="col" class="text-center">Quantity</th>
                         <th scope="col" class="text-right">Price</th>
-                        <th> </th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td><img class="w-50" src="https://cf.shopee.vn/file/c9be265360684de038848de3d9048301_tn"> </td>
-                        <td>Product Name Dada</td>
+                    <tr class="table-striped bg-light">
+                        <td><img class="w-25"
+                                 src="https://res.cloudinary.com/nguyenhs/image/upload/v1620150746/img-Project1/Home-page/newarrivals/newarrivels-2_vqlzjc.jpg">
+                        </td>
+                        <td>Living room lamp</td>
                         <td>In stock</td>
-                        <td><input type="text" value="1"></td>
-                        <td class="text-right">124,90 €</td>
-                        <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                        <td class="text-center align-items-center"><input type="text" class="w-25 text-center"
+                                                                          value="1"></td>
+                        <td class="text-center">124,90 $</td>
+                        <td class="text-right">
+                            <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
@@ -124,15 +137,15 @@
                         <td></td>
                         <td></td>
                         <td>Sub-Total</td>
-                        <td class="text-right">255,90 €</td>
+                        <td class="text-right">255,90 $</td>
                     </tr>
-                    <tr>
+                    <tr class="bg-white">
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td>Shipping</td>
-                        <td class="text-right">6,90 €</td>
+                        <td class="text-right ">6,90 $</td>
                     </tr>
                     <tr>
                         <td></td>
@@ -140,19 +153,26 @@
                         <td></td>
                         <td></td>
                         <td><strong>Total</strong></td>
-                        <td class="text-right"><strong>346,90 €</strong></td>
+                        <td class="text-right"><strong>346,90 </strong></td>
                     </tr>
                     </tbody>
                 </table>
             </div>
         </div>
         <div class="col mb-2">
-            <div class="row">
-                <div class="col-sm-12  col-md-6">
-                    <a href="../products.html"><button class="btn btn-lg btn-block btn-primary">Continue Shopping</button></a>
-                </div>
-                <div class="col-sm-12 col-md-6 text-right">
-                    <a href="../check-out/Checkout.html"><button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button></a>
+            <div class="row checkout-btr-cart">
+<!-- Css trong bachcss-->
+                <div class="col-sm-12  col-md d-flex justify-content-end">
+                    <a href="../products.html" class="mr-1">
+                        <button class="btn btn-primary">Continue Shopping</button>
+                    </a>
+                    <a href="../products.html" class="mr-1">
+                        <button class="btn">Update Cart</button>
+                    </a>
+
+                    <a href="../check-out/Checkout.html">
+                        <button class="btn btn-success text-uppercase">Checkout</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -208,7 +228,6 @@
     </div>
 </footer>
 <!--EndFooter-->
-
 
 
 <script src="../../public/js/jquery-3.6.0.js"></script>

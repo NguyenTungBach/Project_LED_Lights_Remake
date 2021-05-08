@@ -45,11 +45,34 @@
     padding: 30px;
     border:#e4e4e4 solid 1px ;
 }
+
+.blog{
+    overflow: hidden;
+
+}
+
+.blog a{
+    overflow: hidden;
+}
 .blog-img{
     width: 100%;
+    transition: transform .5s ease;
+    overflow: hidden;
+}
+
+.blog-title h4:hover{
+    color: #ff5050;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.blog:hover img{
+    transform: scale(0.9);
+    cursor: pointer;
 }
 .blog-detail{
     margin-bottom: 15px;
+    font-size: 15px;
 }
 .page-2{
     margin-top: 15px;

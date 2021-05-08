@@ -1,38 +1,60 @@
 /*PRODUCTS-Nguyen*/
 
+.bgr-color-prd {
+    background-color: #f2f2f2;
+}
+
+.mb-5px{
+    margin-bottom: 5px;
+}
+
+.jumbotron-heading {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    font-weight: inherit;
+}
+
+.product-top-content a {
+    text-decoration: none;
+}
+
+.product-top-content a:hover {
+    color: #fc5327;
+}
 
 /*Nút Sort By*/
-.featured{
+.featured {
     display: flex;
     justify-content: flex-end;
-
+    margin-bottom: 30px;
 }
 
-.featured label{
-    margin-right: 5px;
-    margin-top: 2px;
+.sort-by select {
+    height: 33px;
+    width: 100%;
+    border: 1px solid #fc5327;
 }
 
-.h-30{
-    height: 30px;
-
-}
-
-.sort-by select:hover{
-    background-color: #ff5050;
+.sort-by select:hover {
+    background-color: #fc5327;
+    color: #FFF;
     cursor: pointer;
 }
 
-
+.sort-by select option:hover {
+    color: #fc5327;
+}
 
 
 /* Left-menu-product*/
-.left-menu-product{
+.left-menu-product {
     position: relative;
 }
-.left-menu-product h4{
+
+.left-menu-product h4 {
     color: #FFFFFF;
-    font-size: 16px ;
+    font-size: 16px;
     margin: 0 0 15px;
     padding: 12px 15px;
     background-color: #ff5050;
@@ -40,119 +62,149 @@
     font-weight: 900;
 }
 
-.left-menu-product ul li{
-    padding: 12px 0 12px 20px;
-    border-bottom: 1px dashed #e4e4e4;
+.left-menu-product ul li {
+    padding: 20px
 
 }
 
-.left-menu-product ul a{
+.left-menu-product ul a {
     text-decoration: unset;
     display: block;
 }
 
-.left-menu-product ul a li{
+.left-menu-product ul a li {
     font-size: 15px;
     color: #000;
     font-weight: 600;
 
 }
 
-.left-menu-product ul li:hover,.left-menu-product ul li a:hover {
+.left-menu-product ul li:hover, .left-menu-product ul li a:hover {
     background-color: #ff5050;
     color: #FFF;
+    transition: .5s ease;
+    border-radius: 50%;
 
 }
 
-.left-menu-product #myCategory{
+.left-menu-product #myCategory {
     display: none;
 }
 
-.left-menu-product #myTrademark{
+.left-menu-product #myTrademark {
     display: none;
 }
 
 
-.left-menu-product a{
+.left-menu-product a {
     text-decoration: unset;
     color: #FFF;
 }
 
-.left-menu-product .icon-pr{
+.left-menu-product .icon-pr {
     display: block;
     position: absolute;
     top: 13px;
     right: 10px;
 }
 
-.product-size ul{
+.product-size ul {
     display: flex;
 }
 
-.product-size ul li{
+.product-size ul li {
     padding: 15px;
     font-weight: 600;
 }
 
-.product-size ul li:hover{
+.product-size ul li:hover {
     cursor: pointer;
 }
 
 /*List den Led*/
 
-.list-led{
-    padding: 7px;
+.list-led {
     border: 5px solid #f8f8f8;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
 }
 
-.prouct-img{
+.prouct-img {
     position: relative;
 
 }
 
-.prouct-img img{
+.prouct-img img {
     width: 100%;
 }
-.icon-product{
+
+.icon-product {
     text-align: center;
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    opacity: 0;
+    padding: 10px;
+    transition: .5s ease;
+    background-color: #FFF;
+
 }
 
-.icon-product a{
+.icon-product a {
     text-decoration: unset;
+    width: 50%;
+    font-size: 20px;
+    color: #000;
 }
 
 .icon-product a:hover{
-    border: 1px solid #000;
+
+}
+
+.icon-product .fa-eye{
+    border-right: 0.5px solid #4e555b ;
+}
+
+.list-led:hover .icon-product{
+    opacity: 1;
+    bottom: 0;
 }
 
 
 
-.product-infor{
+
+
+.star-product {
+    color: #ead137;
+
+}
+
+
+.product-infor {
     width: 100%;
     text-align: center;
     display: block;
-    padding: 20px 10px 10px;
+    padding-top: 6px;
 }
 
-.product-infor a{
+.product-infor a {
     color: #000;
     text-decoration: unset;
-    margin-bottom: 10px;
+
     font-size: 14px;
     font-weight: 600;
 }
-
-.product-infor p{
+.product-infor p {
     font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
 }
 
-.product-infor .fa{
+.product-infor .fa {
     color: #ead137;
 }
 
-.product-infor a:hover{
+.product-infor a:hover {
     color: #e91e63;
 }
