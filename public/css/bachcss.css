@@ -17,8 +17,12 @@ input:hover, textarea:hover{
 
 .poniter-help{
     cursor: pointer;
-}
 
+}
+.poniter-help:hover{
+    border: 4px double #ff5050;
+
+}
 .error{
     color: red !important;
 }
