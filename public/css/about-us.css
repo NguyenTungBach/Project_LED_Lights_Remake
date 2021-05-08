@@ -1,26 +1,111 @@
 
-.main-heading{
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 40px;
-}
-.thumbnail{
-    border-radius: 60%;
-    width: 95%;
-    height:300px;
-}
-.name{
-    font-size: 22px;
-    font-weight: bolder;
-    padding: 5px;
-}
-.description{
-    font-size: 18px;
-    color: #999999;
+
+
+.title-about h3{
+    margin: 0 0 8px;
+    padding: 0 0 25px;
+    font-size: 36px;
+    color: #333333;
+    position: relative;
 }
 
-@media screen  and (max-width: 1199px){
-    .thumbnail{
-        width: 68%;
-    }
+.title-about h3 b{
+    color: #ff5050;
 }
+
+.title-about h3:after{
+    content: "";
+    width: 55px;
+    height: 2px;
+    background-color: #ff5050;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.title-about p{
+    margin: 35px 0 16px;
+    font-size: 14px;
+}
+.hover-about{
+    overflow: hidden;
+}
+
+.hover-about img:hover{
+    transform: scale(0.9);
+    transition: 1s ease;
+
+}
+
+
+.icon-about {
+    font-size: 25px;
+    color: #ff5050;
+}
+
+.content-abourt h4{
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.content-abourt p{
+    font-size: 13px;
+}
+
+
+.our-team-top{
+    margin-bottom: 50px;
+    position: relative;
+    font-size: 40px;
+    padding: 0 0 22px;
+}
+
+.our-team-top:after{
+    content: "";
+    background-color: #ff5050;
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+}
+
+.our-team{
+    box-shadow: 0 6px 50px rgb(0 0 0 / 5%);
+}
+.img-team img{
+    border-radius: 50%;
+}
+
+.img-team img:hover{
+    transform: scale(0.9);
+    filter: grayscale(100%) sepia(100%);
+    transition: 1s ease;
+    cursor: pointer;
+
+}
+
+.infro-text-team h5{
+    margin: 24px 0 8px;
+    font-size: 20px;
+}
+.infro-text-team p{
+    margin: 0 0 15px;
+    font-size: 14px;
+}
+
+.infor-icon-team i{
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #f6f7fb;
+    border-radius: 50%;
+    margin-right: .5rem;
+    text-align: center;
+}
+
+.infor-icon-team i:hover{
+    color: #ff5050;
+    cursor: pointer;
+}
+
+

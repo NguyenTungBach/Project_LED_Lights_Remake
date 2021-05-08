@@ -1,35 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-}
 
-body {
-    -webkit-transition: all 0.5s ease;
-}
 
-.p-13 {
-    padding: 0 13rem;
+.p-5 {
+    padding: 0 5rem;
 }
 
 @media screen and (max-width: 1280px) {
     .p-13 {
-        padding: 0 3rem;
+        padding: 0 1rem;
     }
 }
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
 
 
 /*HomeImg*/
@@ -37,24 +16,49 @@ ul {
     width: 100%;
 }
 
+.conten-home-img h3{
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    letter-spacing: 4px;
+}
+
 .conten-home-img h2 {
-    font-size: 40px;
+    font-size: 55px;
     margin-bottom: 15px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    padding-bottom: 15px;
 }
 
 .conten-home-img p {
-    font-size: 15px;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    text-transform: unset;
+    line-height: 1.5;
 }
 
 .conten-home-img {
     position: absolute;
-    top: 25%;
-    right: 45%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
     color: black;
 }
 
+.content-home{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .conten-home-img .btn {
-    margin-top: 3rem;
+
     padding: 14px 20px;
     background-color: #FFF;
     color: black;
@@ -242,6 +246,9 @@ ul {
 
 
 }
+.newarrivals-content .fa{
+    color: #fcc727;
+}
 
 .newarrivals-content a {
     text-decoration: none;
@@ -294,7 +301,7 @@ ul {
     transform: translate(-50%, -50%);
     justify-content: center;
     opacity: 0;
-    transition: .5s ease;
+    transition: 1s ease;
 }
 
 .ul-icon li a {
@@ -302,6 +309,7 @@ ul {
     padding: 5px 40px;
     width: 100%;
     border-radius: 20px;
+    transition: .5s ease;
 }
 
 .newarrivals-item:hover .newarrivals-img .newarrivals-icon {
@@ -388,20 +396,23 @@ ul {
     width: 100%;
 }
 
-.sale-off-content {
+.absolute-sale-bgr {
     position: absolute;
-    padding-left: 50px;
-    background: rgba(29, 29, 29, 0.5);
+    background: rgba(2, 2, 2, 0.5);
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    padding-top: 20px;
+}
+.sale-off-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .sale-off-content h6 {
     font-size: 20px;
-    margin: 0 0 15px 0;
     font-weight: bolder;
     color: #FFF;
 }
@@ -450,9 +461,7 @@ ul {
 }
 
 @media screen and (max-width: 1299px) {
-    .sale-off-content {
-        top: 30px;
-    }
+
 
     .sale-off-content h6 {
         font-size: 20px;
@@ -469,10 +478,6 @@ ul {
 
 
 @media screen and (max-width: 567px) {
-    .sale-off-content {
-        top: 5px;
-        padding-left: 10px;
-    }
 
     .sale-off-content h6 {
         font-size: 1rem;
@@ -517,9 +522,7 @@ ul {
     text-align: center;
 }
 
-.mt-50 {
-    margin-top: 50px;
-}
+
 
 .new-collection img {
     width: 100%;
@@ -625,6 +628,20 @@ ul {
     width: 100%;
 }
 
+.blog-img{
+    overflow: hidden;
+
+}
+.blog:hover .blog-content h4 a{
+    color: #fc5327;
+}
+
+.blog:hover .blog-img img{
+    transform: scale(1.1);
+    transition: transform 1s;
+    cursor: pointer;
+}
+
 .blog-content {
     padding: 30px 0;
     font-weight: inherit;
@@ -656,9 +673,10 @@ ul {
 }
 
 .blog-content .btn:hover {
-    background-color: #4e555b;
+    background-color: #686895;
     color: #FFF;
 }
+
 
 
 

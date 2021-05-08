@@ -1,6 +1,4 @@
-.container-fluid{
-    padding: 0 60px;
-}
+
 .header{
     text-align: center;
     background-color: #f4f4f4;
@@ -46,18 +44,21 @@
 }
 .title-detail{
     font-size: 35px;
-    font-weight: bolder;
     margin-bottom: 10px;
+    text-transform: inherit;
+    font-weight: normal;
 }
 .prices{
     color:#ff5050 ;
     margin-bottom: 10px;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 22px;
 }
 .star{
     margin-bottom: 10px;
+    color: #d9be35;
 }
+
 #carouselExampleControls{
     width: 100%;
 }
@@ -71,6 +72,7 @@
 }
 .description{
     margin: 20px 0;
+    font-size: 15px;
 }
 .button{
     cursor: pointer;
@@ -81,14 +83,17 @@
     width: 204px;
     margin-bottom: 20px;
     font-weight: bold;
+    font-size: 14px;
+
 }
 #money{
-    font-size: 25px;
+    font-size: 22px;
     color:#ff5050;
     font-weight: bold;
 }
 .many-stock{
-    color: #fcb755;
+    color: #FA9324;
+    font-size: 15px;
 }
 .payment-btn{
     margin-top: 20px;
