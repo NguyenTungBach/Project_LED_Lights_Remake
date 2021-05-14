@@ -60,16 +60,16 @@ btnShipping.onclick = function () {
 }
 
 $("#thumbnail-1").click(function () {
-    var thumnail = `<div><img src="https://cdn.shopify.com/s/files/1/0014/7996/6818/products/interior-products_0017_Layer_15_7b112812-c6ed-4a52-8240-3f325d5437f5.jpg?v=1535352367" alt=""> </div>`
+    var thumnail = `<div><img src="https://res.cloudinary.com/nguyenhs/image/upload/v1620150746/img-Project1/Home-page/newarrivals/newarrivels-2_vqlzjc.jpg" alt=""> </div>`
     $("#thumbnail-main").html(thumnail);
 })
 
 $("#thumbnail-2").click(function () {
-    var thumnail = `<div><img src="//cdn.shopify.com/s/files/1/0014/7996/6818/products/interior-products_0021_Layer-11_medium.jpg?v=1535536158" alt=""> </div>`
+    var thumnail = `<div><img src="https://res.cloudinary.com/nguyenhs/image/upload/v1620150746/img-Project1/Home-page/newarrivals/newarrivels-3_vcr4fh.jpg" alt=""> </div>`
     $("#thumbnail-main").html(thumnail);
 })
 
 $("#thumbnail-3").click(function () {
-    var thumnail = `<div><img src="//cdn.shopify.com/s/files/1/0014/7996/6818/products/interior-products_0022_Layer_10_a8deedac-1637-425d-8575-4b63d8b7bbce_medium.jpg?v=1535536158" alt=""> </div>`
+    var thumnail = `<div><img src="https://res.cloudinary.com/nguyenhs/image/upload/v1620150745/img-Project1/Home-page/newarrivals/newarrivels-1_xtlwdu.jpg" alt=""> </div>`
     $("#thumbnail-main").html(thumnail);
 })
